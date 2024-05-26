@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Barlow", sans-serif;
 }
+html,
 body {
     height: 100vh;
     width: 100%;
@@ -18,6 +19,8 @@ body {
     width: 75%;
     height: 100vh;
     background-color: #333;
+    /* display: flex;
+    justify-content: space-around; */
 }
 .navbar {
     display: flex;
@@ -52,7 +55,15 @@ body {
 .box ul li:hover {
     border-bottom: 2px solid #fff;
     outline: none;
-
-
-
+}
+.mainbox {
+    height: 100vh;
+    background-color: aqua;
+    width: 100%;
+    padding: 8px;
+}
+.color {
+    width: 100px;
+    height: 100px;
+    background-color: #3c40c6;
 }
