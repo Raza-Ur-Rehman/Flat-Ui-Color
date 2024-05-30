@@ -6,8 +6,8 @@ let pickerColor = '';
 for (let i = 0; i <= 11; i++) {
     mainBox.innerHTML += `<div class="box"><div class="innerbox"></div><h3 class="innertitle">lorem</h3></div>`;
 }
-for (let i = 0; i <= 11; i++) {
-    colorBox.innerHTML += `<div class="colorbox"><button class="copybtn">lorem</button></div>`;
+for (let i = 0; i <= 19; i++) {
+    colorBox.innerHTML += `<div class="colorbox"><button onclick="copyColor();" class="copybtn">COPY</button></div>`;
 }
 
 
@@ -18,6 +18,9 @@ function colorGen() {
     for (let i = 0; i <= 19; i++) {
         pickerColor += color[Math.floor(Math.random() * color.length)];
     }
+}
+function copyColor() {
+    navigator.clipboard.writeText();
 }
 
 // pelattesbox.style.backgroundColor = `${pickerColor}` ;
