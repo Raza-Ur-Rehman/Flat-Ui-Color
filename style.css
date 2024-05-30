@@ -93,5 +93,18 @@ body {
     flex-wrap: wrap;
 }
 .colorbox {
+    width: 20%;
+    height: 20vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.copybtn {
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    background: transparent;
 }
