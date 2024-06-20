@@ -1,23 +1,24 @@
-let colorBox = document.querySelector('.color-container');
+let colorcontainer = document.querySelector('.color-container');
+let colorBox = document.querySelector('.colorbox');
 let mainBox = document.querySelector('.mainbox');
+let innerBox = document.querySelector('.innerbox');
 let color = '1234567890abcdef';
-let pickerColor = [];
-// let pelattesbox = document.querySelector('.box')
-function colorGen() {
-    // pickerColor = "#"
-    for (let i = 0; i <= 3; i++) {
-        pickerColor.push(pickerColor += color[Math.floor(Math.random() * color.length)]) ;
-    }
+let pickerColor = "#";
+
+for (let i = 0; i <= 5; i++) {
+    let genColor = color[Math.floor(Math.random() * color.length)];
+    pickerColor += genColor;
 }
+console.log(`${pickerColor}`);
 for (let i = 0; i <= 11; i++) {
-    mainBox.innerHTML += `<div class="box" onclick="colorGen();"><div class="innerbox"></div><h3 class="innertitle">lorem</h3></div>`;
+    mainBox.innerHTML += `<div class="box";"><div class="innerbox"></div><h3 class="innertitle">lorem</h3></div>`;
 }
 for (let i = 0; i <= 19; i++) {
-    colorBox.innerHTML += `<div class="colorbox${i}" onclick="colorGen();"><div><button onclick="copyColor();" class="copybtn">COPY</button></div></div>
+    colorcontainer.innerHTML += `<div class="colorbox"><div><button onclick="copyColor();" class="copybtn">COPY</button></div></div>
     `;
+    colorBox.style.backgroundColor = `${pickerColor}`;
 }
 // console.log(colorGen());
-colorGen();
 
 
 
