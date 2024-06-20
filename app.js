@@ -19,8 +19,9 @@ function showColorBox() {
         colorcontainer.innerHTML += `<div class="colorbox"><divclass="colorbox"><button onclick="copyColor();" class="copybtn">COPY</button></div></div>
         `;
     }
+    
+    colorBox.style.backgroundColor = `${pickerColor}`;
 }
-colorBox.style.backgroundColor = `${pickerColor}`;
 
 
 
