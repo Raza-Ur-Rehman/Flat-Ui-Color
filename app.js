@@ -9,16 +9,18 @@ for (let i = 0; i <= 5; i++) {
     let genColor = color[Math.floor(Math.random() * color.length)];
     pickerColor += genColor;
 }
-console.log(`${pickerColor}`);
 for (let i = 0; i <= 11; i++) {
-    mainBox.innerHTML += `<div class="box";"><div class="innerbox"></div><h3 class="innertitle">lorem</h3></div>`;
+    mainBox.innerHTML += `<div class="box";"><div class="innerbox" onclick="showColorBox();"></div><h3 class="innertitle">lorem</h3></div>`;
 }
-for (let i = 0; i <= 19; i++) {
-    colorcontainer.innerHTML += `<div class="colorbox"><div><button onclick="copyColor();" class="copybtn">COPY</button></div></div>
-    `;
-    colorBox.style.backgroundColor = `${pickerColor}`;
+console.log(`${pickerColor}`);
+innerBox.style.backgroundColor = `${pickerColor}`
+function showColorBox() {
+    for (let i = 0; i <= 19; i++) {
+        colorcontainer.innerHTML += `<div class="colorbox"><divclass="colorbox"><button onclick="copyColor();" class="copybtn">COPY</button></div></div>
+        `;
+    }
 }
-// console.log(colorGen());
+colorBox.style.backgroundColor = `${pickerColor}`;
 
 
 
