@@ -16,10 +16,10 @@ console.log(`${pickerColor}`);
 innerBox.style.backgroundColor = `${pickerColor}`
 function showColorBox() {
     for (let i = 0; i <= 19; i++) {
-        colorcontainer.innerHTML += `<div class="colorbox"><divclass="colorbox"><button onclick="copyColor();" class="copybtn">COPY</button></div></div>
+        colorcontainer.innerHTML += `<div class="colorbox"><div><button onclick="copyColor();" class="copybtn">COPY</button></div></div>
         `;
     }
-    
+
     colorBox.style.backgroundColor = `${pickerColor}`;
 }
 
@@ -27,7 +27,7 @@ function showColorBox() {
 
 function copyColor() {
     navigator.clipboard.writeText(pickerColor);
-    alert("copy hogaya")
+    alert(`Color Copy hogaya ${pickerColor}`)
 }
 // pelattesbox.style.backgroundColor = `${pickerColor}` ;
 
